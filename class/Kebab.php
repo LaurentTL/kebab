@@ -11,7 +11,6 @@ class Kebab
 {
 
     private $nom;
-    private $pice;
 
     public function __construct($nom)
     {

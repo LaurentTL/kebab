@@ -5,5 +5,10 @@ require './Kebab.php';
 class Americain extends Kebab
 {
 
-    private $prixBuffalo = 4.5;
+    private $prixAmericain = 4.5;
+
+    public function getPrice()
+    {
+        return $this->prixAmericain;
+    }
 }
