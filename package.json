@@ -1,0 +1,9 @@
+{
+  "name": "devoir_kebab_php",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.48.0"
+  }
+}
