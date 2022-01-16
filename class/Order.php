@@ -46,21 +46,19 @@ class Order
         $this->totalPrice = array_sum($this->totalPrice);
     }
 
-    public static function getInstances($includeSubclasses = false)
+    public static function getInstances()
     {
-        $return = array();
-        foreach(self::$_instances as $instance) {
-            if ($instance instanceof get_class($this)) {
-                if ($includeSubclasses || (get_class($instance) === get_class($this)) {
-                    $return[] = $instance;
-                }
-            }
+        $result = [];
+        foreach (self::$instances as $instance) {
+            $result[] = $instance;
         }
-        return $return;
+        return $result;
     }
 }
 
 $order = new Order();
+$order1 = new Order('marc');
+$order2 = new Order('marion');
 $order->client("Antoine");
 $order->addKebab("americain");
 $order->addKebab("americain");
@@ -71,5 +69,10 @@ $order->addKebab("buffalo");
 $order->removeKebab();
 $order->removeKebab();
 $order->calcPrice();
+$cmd = Order::getInstances();
 
 pre($order);
+pre($order1);
+pre($order2);
+
+pre($cmd);
