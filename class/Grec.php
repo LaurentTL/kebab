@@ -1,13 +1,6 @@
 <?php
 
-function pre($item)
-{
-    echo "<pre>";
-    var_dump($item);
-    echo "</pre>";
-}
-
-class Kebab
+class Grec
 {
 
     private $nom;
@@ -30,8 +23,5 @@ class Kebab
 }
 
 
-$kebab = new Kebab("Buffalo");
-$kebab1 = new Kebab("Americain");
-
-pre($kebab);
-pre($kebab1);
+// $kebab = new Grec("Buffalo");
+// $kebab1 = new Grec("Americain");

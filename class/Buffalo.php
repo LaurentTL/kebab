@@ -1,8 +1,8 @@
 <?php
 
-require './Kebab.php';
+require './Grec.php';
 
-class Buffalo extends Kebab
+class Buffalo extends Grec
 {
 
     private $prixBuffalo = 5.0;

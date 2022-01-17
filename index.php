@@ -11,7 +11,14 @@
 
 <body>
     <form action="order_treatment.php"></form>
+    <?php
+    require './class/Buffalo.php';
 
+    $buffalo = new Buffalo('Buffalo');
+
+    var_dump($buffalo);
+
+    ?>
 </body>
 
 </html>

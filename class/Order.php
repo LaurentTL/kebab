@@ -57,7 +57,7 @@ class Order
 }
 
 $order = new Order();
-$order1 = new Order('marc');
+$order1 = new Order('');
 $order2 = new Order('marion');
 $order->client("Antoine");
 $order->addKebab("americain");
@@ -70,6 +70,7 @@ $order->removeKebab();
 $order->removeKebab();
 $order->calcPrice();
 $cmd = Order::getInstances();
+
 
 pre($order);
 pre($order1);
